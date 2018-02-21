@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.codexpedia.picassosaveimage.MainActivity">
+
+    <Button
+        android:id="@+id/btn_load_from_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image From URL"
+        android:onClick="loadImageFromUrl"/>
+    <Button
+        android:id="@+id/btn_save_from_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download and Save Image From URL"
+        android:onClick="downloadSaveImageFromUrl"/>
+    <Button
+        android:id="@+id/btn_load_from_disk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image From Disk"
+        android:onClick="loadImageFromDisk"/>
+    <Button
+        android:id="@+id/btn_delete_from_disk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Image From Disk"
+        android:onClick="deleteImageFromDisk"/>
+    <Button
+        android:id="@+id/btn_check_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check If Image Exist"
+        android:onClick="checkIfImageExist"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="7sp"
+        android:text="image url:\nhttps://cloud.githubusercontent.com/assets/5489943/14237225/ef4e3666-f9ee-11e5-886e-9e15b1f1b09d.png"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="7sp"
+        android:text="image path on disk:\n/data/data/com.codexpedia.picassosaveimage/app_imageDir/my_image.jpg"/>
+
+    <TextView
+        android:id="@+id/tv_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
